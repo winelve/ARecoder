@@ -89,7 +89,8 @@ def save_audio_file(frames, filename):
 
 # 使用示例
 if __name__ == "__main__":
-    # 查看可用设备
-    devices = list_audio_devices()
-    # # 录音5秒
-    filename = record_audio(5, "test.wav")
+    # # 查看可用设备
+    # devices = list_audio_devices()
+    # # # 录音5秒
+    # filename = record_audio(5, "test.wav")
+    print(pyaudio.paInt16)
