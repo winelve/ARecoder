@@ -1,0 +1,14 @@
+{
+    "info":"wyq默认麦克风设备的信息 --by wyq",
+    "index": 1,
+    "structVersion": 2,
+    "name": "麦克风阵列 (Realtek(R) Audio)",
+    "hostApi": 0,
+    "maxInputChannels": 4,
+    "maxOutputChannels": 0,
+    "defaultLowInputLatency": 0.09,
+    "defaultLowOutputLatency": 0.09,
+    "defaultHighInputLatency": 0.18,
+    "defaultHighOutputLatency": 0.18,
+    "defaultSampleRate": 44100
+}
