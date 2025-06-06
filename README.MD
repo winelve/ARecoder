@@ -21,7 +21,7 @@
 
 请打开命令行窗口
 
-```python
+```
 python main.py 指令 参数
 ```
 
@@ -37,13 +37,13 @@ python main.py 指令 参数
 
 ### 参数:
 
-```json
+```
 // 指令
 // 说明: record的参数均是可选的
 record
  参数
 -o "path"   (outpath)  				//输出路径 
--d 1,2,3,4  (devices)				#指定设备编号,每个设备用'英文逗号'分隔
+-d 1,2,3,4  (devices)				//指定设备编号,每个设备用'英文逗号'分隔
 -t 5		(time)					-- 指定录制时长
 -r 44100    (rate)					采样率
 -c 2		(channel)				通道数
@@ -72,7 +72,7 @@ default
 
 # 配置数据 `config.json`
 
-```json
+```
 {
     "format":8,  格式
     "channels":1,   通道数
