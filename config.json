@@ -3,10 +3,9 @@
     "channels":1, 
     "rate":44100, 
     "is_input":true,
-    "input_size":1,
     "input_device_index":[1],
     "frames_per_buffer":1024,
-    "mode": "timimg", 
+    "mode": "timing", 
     "timing": 5,
     "outpath": "./audio/"
 }
