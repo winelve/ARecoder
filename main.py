@@ -92,7 +92,8 @@ def create_parser() -> argparse.ArgumentParser:
     )
     devices_parser.add_argument(
         '-d', '--detail',
-        help=f'显示输出设备 (默认: 不显示)'
+        action='store_true',  # 添加这行
+        help='显示输出设备详细信息'
     )
     
     # 添加默认设备命令
@@ -145,18 +146,20 @@ def main():
             config = default_config()
         recorder = AudioRecorder(config)
         
+        print(args)
+        
         if args.command == 'record':
             config = build_config_from_args(config,args)
             recorder.set_config(config)
             recorder.record_multi_devices()
             
-        elif args.command == 'devices' and args.devices is not None:
+        elif args.command == 'devices':
             print("可用音频设备列表:")
-            if hasattr(args,"detail"): 
+            if args.detail:
                 recorder.show_devices(filter=False)
-                print("have")
             else:
                 recorder.show_devices()
+                
         elif args.command == 'default':
             recorder.show_default_device()
         else:
